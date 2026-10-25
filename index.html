@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays, Functions and Objects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:beige;
+            color: #222;
+            margin: 0;
+            padding: 25px;
+        }
+       
+        h1 {
+            color: #da6e17;
+            text-align: center;
+        }
+        h2 {
+            color: hsl(17, 87%, 17%);
+            font-size: 19px;
+            margin-top: 25px;
+        }
+       
+        .question {
+            margin-bottom: 20px;
+        }
+        p{
+          color:#924323
+        }
+        h2:hover{
+            color:#9b690b
+        }
+        h1:hover{
+            color:#924323
+        }
+    </style>
+</head>
+<body>
+    
+        <h1>JavaScript Assignment</h1>
+        <p>Topics: Arrays, Functions and Objects</p>
+
+       
+            <h2>1. Create an array of five numbers and print all elements.</h2>
+          
+
+        
+            <h2>2. Create an array of three fruits and print the first and last elements.</h2>
+         
+
+        
+            <h2>3. Add "Mango" to the end of an array using push().</h2>
+           
+
+        
+            <h2>4. Find the length of the array.</h2>
+           
+
+        
+            <h2>5. Write a function that prints "Hello World".</h2>
+       
+
+        
+            <h2>6. Write a function that takes two numbers and prints their sum.</h2>
+
+
+        
+            <h2>7. Write a function that takes a number and returns its square.</h2>
+ 
+       
+
+        
+            <h2>8. Write a function that checks whether a number is even or odd.</h2>
+           
+        
+
+        
+            <h2>9. Write a function to find the largest of two numbers.</h2>
+        
+
+        
+            <h2>10. Write a function that takes a name and prints a welcome message.</h2>
+       
+
+        
+            <h2>11. Create a student object and print all three properties.</h2>
+            
+       
+            <h2>12. Create a car object and print its brand.</h2>
+          
+       
+            <h2>13. Update the student's age to 20 and print it.</h2>
+           
+        
+            <h2>14. Write a function that returns the sum of all array elements.</h2>
+           
+        
+            <h2>15. Create a student object and print the student's name and marks using a function.</h2>
+           
+       
+    <script>
+        let numbers = [10, 20, 30, 40, 50];
+        console.log("Question 1:", numbers);
+
+        let fruits = ["Apple", "Banana", "Mango"];
+        console.log("Question 2:", fruits[0], fruits[2]);
+
+        let moreFruits = ["Apple", "Banana", "Orange"];
+        moreFruits.push("Mango");
+        console.log("Question 3:", moreFruits);
+
+        console.log("Question 4:", numbers.length);
+
+        function hello() {
+            console.log("Hello World");
+        }
+        hello();
+
+        function sum(a, b) {
+            console.log(a + b);
+        }
+        sum(10, 20);
+
+        function square(num) {
+            console.log(num * num);
+        }
+        square(5);
+
+        function checkNumber(num) {
+            if (num % 2 === 0) {
+                console.log("Even");
+            } else {
+                console.log("Odd");
+            }
+        }
+        checkNumber(7);
+
+        function largest(a, b) {
+            if (a > b) {
+                console.log(a);
+            } else {
+                console.log(b);
+            }
+        }
+        largest(15, 25);
+
+        function welcome(name) {
+            console.log("Welcome " + name);
+        }
+        welcome("Aisha");
+
+        let student = {
+            name: "Aisha",
+            age: 15,
+            class: "11th"
+        };
+        console.log(student.name);
+        console.log(student.age);
+        console.log(student.class);
+
+        let car = {
+            brand: "Toyota",
+            model: "Corolla",
+            color: "White"
+        };
+        console.log(car.brand);
+
+        let studentAge = {
+            age: 18
+        };
+        studentAge.age = 20;
+        console.log(studentAge.age);
+
+        function sumArray(numbers) {
+        let sum = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+        sum = sum + numbers[i];
+    }
+
+    console.log(sum);
+} 
+    sumArray([10,20,40,80,90]);
+
+
+
+        let studentMarks = {
+            name: "Ali",
+            marks: 85
+        };
+        function printStudent(student) {
+            console.log(student.name);
+            console.log(student.marks);
+        }
+        printStudent(studentMarks);
+    </script>
+</body>
+</html>
